@@ -267,13 +267,12 @@ S_BILL_AMT,S_GOVT_SUBSIDY,S_MON_BILL,SAMADHAN_ARR,QR_CODE,ADV_PAY_INCENT,ONLINE_
 
 
                 ?>
- 
                 <!-- style="color: dodgerBlue" -->
                 <form action="" method="POST" id="myfrm"> 
                 <table align="center" style  height:"253.5mm" >
                 <tr><td colspan="4" align="center"><font size="2"><b>मध्यप्रदेश पुर्व  क्षेत्र  विदयुत  वितरण कंपनी  लिमिटेड : विदयुत देयक </b> </font></td></tr>
                 <tr><td class="hide_top" colspan="4" align="center"><font size="1"><b>ब्लॉक नं ७ शक्ति भवन, रामपूर, जबलपूर CIN NO. U40109MP2002SGC015120  &nbsp;Website:www.mpez.co.in </b></font></td></tr>
-                <!-- <tr><td  colspan="4" align="center"><font size="1"><b>विद्युत प्रदाय एवं बिल संबंधी शिकायत / जानकारी के लिये उपभोक्ता सेवा केंद्र के (निःशुल्क ) दूरभाष क्र १९१२ पर २४ घंटे संपर्क किया जा सकता है ।</b></font></td></tr> -->
+                
                 <tr><td width="61%"><font size="1">आई  वी  आर एस क्रमांक :</font><font size="1">&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $IVRSID;?></font></td>
                 <td colspan="3"width="39%" align="left"><font size="1">पुराना सर्विस क्रमांक : <?php echo $OLDCONSNO;?></td></tr>
                 <tr><td class="hide_top" width="61%"><font size="1">संभाग का नाम :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <?php echo $DIVISION_LOC_CD;?>,&nbsp;<?php echo $DIVISION_LOC_DESC;?></font></td>
@@ -427,15 +426,7 @@ S_BILL_AMT,S_GOVT_SUBSIDY,S_MON_BILL,SAMADHAN_ARR,QR_CODE,ADV_PAY_INCENT,ONLINE_
                 <td width="12%" align="left"><font size="1">कार्यपालन यंत्री </td></tr>
 
                 <tr><td colspan="2" width="71%" align="center"><font size="3"><b>इंदिरा गृह ज्योती योजना </b></font></td>
-                <td colspan="2" width="32%" align="left"><font size="1">भुगतान राशी रसीद मुहर सहित 
-                
-
-
-
-           <!-- <img src= $file> -->
-           
-                
-                </td></tr>
+                <td colspan="2" width="32%" align="left"><font size="1">भुगतान राशी रसीद मुहर सहित </td></tr>
 
                 <tr><td class="hide_top" colspan="2" width="71%" align="center"><font size="1"></font></td>
                 <td class="hide_top" colspan="2" width="32%" align="left"><font size="1"></td></tr>
@@ -455,7 +446,7 @@ S_BILL_AMT,S_GOVT_SUBSIDY,S_MON_BILL,SAMADHAN_ARR,QR_CODE,ADV_PAY_INCENT,ONLINE_
                 <!-- blank box -->
                 <tr><td colspan="4"><font size="1">.</font></td></tr>
                 <tr><td class="hide_top" colspan="4"><font size="1">.</font></td></tr>
-               
+                <tr><td class="hide_top" colspan="4"><font size="1">.</font></td></tr>
                 
                 
                 
@@ -498,16 +489,6 @@ S_BILL_AMT,S_GOVT_SUBSIDY,S_MON_BILL,SAMADHAN_ARR,QR_CODE,ADV_PAY_INCENT,ONLINE_
                 <td class="hide_top" width="25%" align="left"><font size="1"></td></tr>
                 
                 
-
-                <?php 
-include 'phpqrcode-master/qr/qrlib.php'; 
-$path = 'images/'; 
-$file = $path.uniqid().".png"; 
-$text = $QR_CODE; 
-QRcode::png($text,$file, "L", 1, 1);
-echo "<center><img src='".$file."'></center>"; 
-?>
-
                 </table>
                 </form>
              
@@ -535,8 +516,6 @@ echo "<center><img src='".$file."'></center>";
    }
     }
 ?>
-
-
 
 </body>
                 </html>

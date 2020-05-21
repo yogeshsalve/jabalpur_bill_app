@@ -278,13 +278,13 @@ S_BILL_AMT,S_GOVT_SUBSIDY,S_MON_BILL,SAMADHAN_ARR,QR_CODE,ADV_PAY_INCENT,ONLINE_
                 <tr><td class="hide_top" width="61%"><font size="1">संभाग का नाम :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <?php echo $DIVISION_LOC_CD;?>,&nbsp;<?php echo $DIVISION_LOC_DESC;?></font></td>
                 <td class="hide_top" colspan="3"width="39%" align="left"><font size="1">टैरिफ श्रेणी / बिल माह :<?php echo $TRF_CATG;?>,&nbsp;<?php echo $BILL_MON;?></td></tr>
                 <tr><td class="hide_top" width="61%"><font size="1">सर्विस क्रमांक :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <?php echo $CONNID;?></font></td>
-                <td class="hide_top" colspan="3" width="39%" align="left"><font size="1">खपत (युनिट्स ) : </td></tr>
+                <td class="hide_top" colspan="3" width="39%" align="left"><font size="1">खपत (युनिट्स ) : <?php echo $TOTCONSMP;?></td></tr>
                 <tr><td class="hide_top"  width="61%"><font size="1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $CONS_LOC_DESC;?></font></td>
                 <td class="hide_top" colspan="3" width="39%" align="left"><font size="1">बिलिंग मांग : <?php echo $CURR_DEMAND;?></td></tr>
                 <tr><td class="hide_top"  width="61%"><font size="1">बिल क्रमांक तथा दिनांक :&nbsp;&nbsp;&nbsp;<?php echo $BILL_NO;?>,&nbsp;<?php echo $BILL_ISSUE_DATE;?></font></td>
                 <td class="hide_top" colspan="3" width="39%" align="left"><font size="1">नियत तिथी तक देय राशी रुपयों  में : <?php echo $BILL_NET;?></td></tr>
 
-                <tr><td class="hide_top"width="61%"><font size="1">श्री /सुश्री : <?php echo $CONS_NAME_HINDI;?></font></td>
+                <tr><td class="hide_top"width="61%"><font size="1">श्री /सुश्री : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $CONS_NAME_H;?></font></td>
                 <td  colspan="3" width="39%" align="center"><font size="1"><b>भुगतान की अंतिम तिथी</b> </td></tr>
 
                 <tr><td class="hide_top" width="61%"><font size="1">पता :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <?php echo $CONS_ADDH1;?> </font></td>
@@ -302,10 +302,10 @@ S_BILL_AMT,S_GOVT_SUBSIDY,S_MON_BILL,SAMADHAN_ARR,QR_CODE,ADV_PAY_INCENT,ONLINE_
                 <tr><td class="hide_top" width="61%"><font size="1">संविदा मांग / अधिकतम मांग :</font></td>
                 <td  colspan="3" width="39%" align="left"><font size="1"><b>राज्य शासन सब्सिडी : </b><?php echo $S_GOVT_SUBSIDY;?></td></tr>
 
-                <tr><td class="hide_top" width="61%"><font size="1">पिछली रिडींग तथा गुणांक :&nbsp;&nbsp;<?php echo $PREV_RDG;?>,<?php echo $MF;?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; वर्तमान  रिडींग / दिनांक :<?php echo $CURR_RDG;?> / <?php echo $RDG_DT;?></font></td>
+                <tr><td class="hide_top" width="61%"><font size="1">पिछली रिडींग तथा गुणांक :&nbsp;&nbsp;<?php echo $PREV_RDG;?>,&nbsp;&nbsp;<?php echo $MF;?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; वर्तमान  रिडींग / दिनांक :<?php echo $CURR_RDG;?> / <?php echo $RDG_DT;?></font></td>
                 <td colspan="3" width="39%" align="left"><font size="1"><b>मासिक देयक राशी :</b><?php echo $S_MON_BILL;?></td></tr>
 
-                <tr><td class="hide_top" width="61%"><font size="1">पावर फैक्टर :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;मीटर खपत तथा आंकलीत खपत :<?php echo $CONSMP;?>,<?php echo $ASS_CONSMP;?></font></td>
+                <tr><td class="hide_top" width="61%"><font size="1">पावर फैक्टर :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;मीटर खपत तथा आंकलीत खपत :<?php echo $CONSMP;?>&nbsp;&nbsp;&nbsp;<?php echo $ASS_CONSMP;?></font></td>
                 <td width="7%" align="left"><font size="1"></td>
                 <td width="20%" align="center"><font size="1"><b>राशी गणना विवरण </b></td>
                 <td width="12%" align="center"><font size="1"><b>रुपये / पैसे </b></td></tr>

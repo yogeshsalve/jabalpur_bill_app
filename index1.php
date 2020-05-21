@@ -69,11 +69,11 @@
     <div class="card-body">
       <h3 class="card-title" align="center"><b>गैर घरेलू विद्युत देयक</b></h3>
       <h5>Upload Data</h5>
-      <form id="upload_file1">
+      <form id="upload_file2">
       <div class="file-field input-field">
                 <div class="btn">
                     <span>File</span>
-                    <input type="file" name="contact_file1">
+                    <input type="file" name="contact_file2">
                 </div>
                 <div class="file-path-wrapper">
                     <input type="text" class="file-path validate">
@@ -85,7 +85,7 @@
           <br>
           <br>
           <br>
-<P align="center"><a class="btn btn-success" width="100%" href="dombills.php" role="button">PRINT DOM SCHEME BILLS</a></p> 
+<P align="center"><a class="btn btn-success" width="100%" href="ndmbills.php" role="button">PRINT NDM SCHEME BILLS</a></p> 
     </div>
   </div>
 </div>
@@ -132,6 +132,36 @@
             e.preventDefault();
             $.ajax({
                 url:"importdom.php",
+                method:"POST",
+                data: new FormData(this),
+                contentType:false,
+                cache:false,
+                processData:false,
+                success: function(data){
+                    if(data=='Error1'){
+                        alert("Invalid File");
+                    }else if(data =='Error2'){
+                        alert("Please Select file");
+                    }else{
+                        console.log("Success",data);
+                    }
+                },
+                error: function(data){
+                	console.log("err:::",data)
+                }
+
+            })
+        });
+      });
+
+  </script>
+
+<script type="text/javascript">
+      $(document).ready(function(){
+        $('#upload_file2').on("submit",function(e){
+            e.preventDefault();
+            $.ajax({
+                url:"importndm.php",
                 method:"POST",
                 data: new FormData(this),
                 contentType:false,
