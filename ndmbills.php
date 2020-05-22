@@ -308,32 +308,32 @@ if(isset($_POST['submit'])){
                 <tr><td colspan="4" width="60%"><font size="1">संभाग का नाम :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <?php echo $DIVISION_LOC_CD;?>,&nbsp;<?php echo $DIVISION_LOC_DESC;?></font></td>
                 <td width="5%" align="left"><font size="1"></td>
                 <td width="15%" align="left"><font size="1">टैरिफ श्रेणी :</td>
-                <td width="20%" align="left"><font size="1"></td></tr>
+                <td width="20%" align="left"><font size="1"><?php echo $TRF_CATG;?></td></tr>
 
-                <tr><td class="hide_top" colspan="4" width="60%"><font size="1">सर्विस क्रमांक : </font></td>
+                <tr><td class="hide_top" colspan="4" width="60%"><font size="1">सर्विस क्रमांक :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <?php echo $CONNID;?>&nbsp;&nbsp;<?php echo $CONS_LOC_DESC;?> </font></td>
                 <td class="hide_top" width="5%" align="left"><font size="1"></td>
                 <td width="15%" align="left"><font size="1">माह :</td>
-                <td width="20%" align="left"><font size="1"></td></tr>
+                <td width="20%" align="left"><font size="1"><?php echo $BILL_MON;?></td></tr>
 
-                <tr><td class="hide_top" colspan="4" width="60%"><font size="1">बिल क्रमांक : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; बिल दिनांक : </font></td>
+                <tr><td class="hide_top" colspan="4" width="60%"><font size="1">बिल क्रमांक : :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $BILL_NO;?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; बिल दिनांक : <?php echo $BILL_ISSUE_DATE;?> </font></td>
                 <td class="hide_top" width="5%" align="left"><font size="1"></td>
                 <td width="15%" align="left"><font size="1">बिलिंग खपत (यु) :</td>
-                <td width="20%" align="left"><font size="1"></td></tr>
+                <td width="20%" align="left"><font size="1"><?php echo $BILLED_UNIT;?></td></tr>
 
-                <tr><td colspan="4" width="60%"><font size="1">श्री / सुश्री : </font></td>
+                <tr><td colspan="4" width="60%"><font size="1">श्री / सुश्री :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <?php echo $CONS_NAME_H;?></font></td>
                 <td class="hide_top" width="5%" align="left"><font size="1"></td>
                 <td width="15%" align="left"><font size="1">बिलिंग माँग :</td>
+                <td width="20%" align="left"><font size="1"><?php echo $CURR_DEMAND;?></td></tr>
+
+                <tr><td colspan="4" width="60%"><font size="1">पता  : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <?php echo $CONS_ADDH1;?></font></td>
+                <td class="hide_top" width="5%" align="left"><font size="1"></td>
+                <td width="15%" align="left"><font size="1">नियत तिथी तक</td>
                 <td width="20%" align="left"><font size="1"></td></tr>
 
-                <tr><td colspan="4" width="60%"><font size="1">पता  : </font></td>
+                <tr><td class="hide_top" colspan="4" width="60%"><font size="1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <?php echo $CONS_ADDH2;?></font></td>
                 <td class="hide_top" width="5%" align="left"><font size="1"></td>
-                <td width="15%" align="left"><font size="1">नियत तिथी तक :</td>
-                <td width="20%" align="left"><font size="1"></td></tr>
-
-                <tr><td class="hide_top" colspan="4" width="60%"><font size="1"></font></td>
-                <td class="hide_top" width="5%" align="left"><font size="1"></td>
-                <td width="15%" align="left"><font size="1">देय राशी रुपयों मे :</td>
-                <td width="20%" align="left"><font size="1"></td></tr>
+                <td class="hide_top" width="15%" align="left"><font size="1">देय राशी रुपयों मे :</td>
+                <td class="hide_top" width="20%" align="left"><font size="1"><?php echo $BILL_NET;?></td></tr>
 
                 <tr><td class="hide_top" colspan="4" width="60%"><font size="1"></font></td>
                 <td class="hide_top" width="5%" align="left"><font size="1"></td>
@@ -345,20 +345,20 @@ if(isset($_POST['submit'])){
                 <td width="15%" align="left"><font size="1">चेक हेतु :</td>
                 <td width="20%" align="left"><font size="1">नगद हेतु :</td></tr>
 
-                <tr><td  colspan="4" width="60%"><font size="1">फोन नं : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; मो. : </font></td>
+                <tr><td  colspan="4" width="60%"><font size="1">फोन नं : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $MOB_NO;?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; मो. :<?php echo $MOB_NO;?> </font></td>
+                <td class="hide_top" width="5%" align="left"><font size="1"></td>
+                <td width="15%" align="left"><font size="1"><?php echo $FIRST_CHQ_DT_H;?></td>
+                <td width="20%" align="left"><font size="1"><?php echo $FIRST_CASH_DT_H;?></td></tr>
+
+                <tr><td colspan="4" width="60%"><font size="1">पोल क्रमांक :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $EXIST_POLE_NO;?></font></td>
                 <td class="hide_top" width="5%" align="left"><font size="1"></td>
                 <td width="15%" align="left"><font size="1"></td>
                 <td width="20%" align="left"><font size="1"></td></tr>
 
-                <tr><td colspan="4" width="60%"><font size="1">पोल क्रमांक :</font></td>
-                <td class="hide_top" width="5%" align="left"><font size="1"></td>
-                <td width="15%" align="left"><font size="1"></td>
-                <td width="20%" align="left"><font size="1"></td></tr>
+                <tr><td  class="hide_top" colspan="4" width="60%"><font size="1">मीटर क्रमांक :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $MTR_NO;?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;प्रदाय फेज:<?php echo $PHASE1;?></font></td>
+                <td colspan="3"  width="5%" align="center"><font size="1">बिजली की बचत कीजिये </td></tr>
 
-                <tr><td  class="hide_top" colspan="4" width="60%"><font size="1">मीटर क्रमांक :       प्रदाय फेज:</font></td>
-                <td colspan="3"  width="5%" align="left"><font size="1">बिजली की बचत कीजिये </td></tr>
-
-                <tr><td colspan="4"  class="hide_top"  width="60%"><font size="1">रीडिंग प्रकार  :       संविदा मांग :  </font></td>
+                <tr><td colspan="4"  class="hide_top"  width="60%"><font size="1">रीडिंग प्रकार  : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $RDG_TYP;?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;संविदा मांग : </font></td>
                 <td colspan="3"    width="60%"><font size="1">अधिकतम मांग :</font></td></tr>
                 </table>
 
@@ -371,13 +371,13 @@ if(isset($_POST['submit'])){
                 <td><font size="1">अंकलीत खपत   :</font></td>
                 <td><font size="1">कुल खपत  :</font></td></tr>
 
-                <tr><td><font size="1">.</font></td>
-                <td><font size="1">.</font></td>
-                <td><font size="1">.</font></td>
-                <td><font size="1">.</font></td>
-                <td><font size="1">.</font></td>
-                <td><font size="1">.</font></td>
-                <td><font size="1">.</font></td></tr>
+                <tr><td><font size="1"><?php echo $CURR_RDG;?></font></td>
+                <td><font size="1"><?php echo $PREV_RDG;?></font></td>
+                <td><font size="1"><?php echo $MF;?></font></td>
+                <td><font size="1"><?php echo $AVG_PF;?></font></td>
+                <td><font size="1"><?php echo $CONSMP;?></font></td>
+                <td><font size="1"><?php echo $ASS_CONSMP;?></font></td>
+                <td><font size="1"><?php echo $TOTCONSMP;?></font></td></tr>
 
                 <tr><td colspan="7" width="100%" align="center"><font size="1">टी ओ डी खपत </font></td></tr>
                 </table>
@@ -385,192 +385,195 @@ if(isset($_POST['submit'])){
 
 
                 <table class="mytable mytable-body" align="center">
-                <tr><td colspan="4" width="50%"><font size="1">वितरण केंद्र :</font></td>
-                <td class="hide_top" width="10%" align="left"><font size="1"></td>
+                <tr><td colspan="4" width="55%"><font size="1">वितरण केंद्र : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $DCLOC;?></font></td>
+                <td class="hide_top" width="5%" align="left"><font size="1"></td>
                 <td width="20%" align="left"><font size="1">राशी गणना विवरण </td>
                 <td width="20%" align="left"><font size="1">रुपये / पैसे </td></tr>
 
-                <tr><td colspan="4" width="50%"><font size="1">नाम / पता / फोन :</font></td>
-                <td class="hide_top" width="10%" align="left"><font size="1">ऊर्जा </td>
+                <tr><td colspan="4" width="55%"><font size="1">नाम / पता / फोन : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $DCADD1;?></font></td>
+                <td class="hide_top" width="5%" align="left"><font size="1">.</td>
                 <td width="20%" align="left"><font size="1">ऊर्जा प्रभार : </td>
-                <td width="20%" align="left"><font size="1"> </td></tr>
+                <td width="20%" align="left"><font size="1"><?php echo $ENERGY_CHRG;?></td></tr>
 
-                <tr><td  class="hide_top" colspan="4" width="50%"><font size="1"></font></td>
-                <td class="hide_top" width="10%" align="left"><font size="1"></td>
+                <tr><td  class="hide_top" colspan="4" width="55%"><font size="1"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $DCADD2;?></font></td>
+                <td class="hide_top" width="5%" align="left"><font size="1"></td>
                 <td class="hide_top" width="20%" align="left"><font size="1">नियत प्रभार : </td>
-                <td class="hide_top" width="20%" align="left"><font size="1"> </td></tr>
+                <td class="hide_top" width="20%" align="left"><font size="1"><?php echo $FIXED_CHARGE;?></td></tr>
 
-                <tr><td  class="hide_top" colspan="4" width="50%"><font size="1"></font></td>
-                <td class="hide_top" width="10%" align="left"><font size="1"></td>
+                <tr><td  class="hide_top" colspan="4" width="55%"><font size="1"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $DCADD3;?></font></td>
+                <td class="hide_top" width="5%" align="left"><font size="1"></td>
                 <td width="20%" align="left"><font size="1">विद्युत शुल्क (ड्यूटी) </td>
-                <td width="20%" align="left"><font size="1"> </td></tr>
+                <td width="20%" align="left"><font size="1"><?php echo $DUTY;?></td></tr>
 
-                <tr><td  class="hide_top" colspan="4" width="50%"><font size="1"></font></td>
-                <td class="hide_top" width="10%" align="left"><font size="1"></td>
+                <tr><td  class="hide_top" colspan="4" width="55%"><font size="1"></font></td>
+                <td class="hide_top" width="5%" align="left"><font size="1"></td>
                 <td class="hide_top" width="20%" align="left"><font size="1">ऊर्जा विकास उपकार सेस : </td>
-                <td class="hide_top" width="20%" align="left"><font size="1"> </td></tr>
+                <td class="hide_top" width="20%" align="left"><font size="1"><?php echo $CESS;?></td></tr>
 
-                <tr><td colspan="4" width="50%"><font size="1">शिकायत हेतु संपर्क :</font></td>
-                <td class="hide_top" width="10%" align="left"><font size="1"></td>
+                <tr><td colspan="4" width="55%"><font size="1"><b>शिकायत हेतु संपर्क</b> </font></td>
+                <td class="hide_top" width="5%" align="left"><font size="1"></td>
                 <td width="20%" align="left"><font size="1">मीटर किराया : </td>
-                <td width="20%" align="left"><font size="1"> </td></tr>
+                <td width="20%" align="left"><font size="1"><?php echo $MTR_RENT;?></td></tr>
 
-                <tr><td class="hide_top" colspan="4" width="50%"><font size="1">क श्री    कनिष्ठ अभियंता से  :</font></td>
-                <td class="hide_top" width="10%" align="left"><font size="1"></td>
+                <tr><td class="hide_top" colspan="4" width="55%"><font size="1">क श्री कनिष्ठ अभियंता से :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $NAME_JE;?></font></td>
+                <td class="hide_top" width="5%" align="left"><font size="1"></td>
                 <td class="hide_top" width="20%" align="left"><font size="1">समायोजन / गणना :(CCB)</td>
-                <td class="hide_top"width="20%" align="left"><font size="1"> </td></tr>
+                <td class="hide_top"width="20%" align="left"><font size="1"><?php echo $ADJ_AMT;?></td></tr>
 
-                <tr><td class="hide_top" colspan="4" width="50%"><font size="1">दूरभाष क्रमांक  एवम :</font></td>
-                <td class="hide_top" width="10%" align="left"><font size="1"></td>
+                <tr><td class="hide_top" colspan="4" width="55%"><font size="1">दूरभाष क्रमांक  एवम :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $PH_JE1;?></font></td>
+                <td class="hide_top" width="5%" align="left"><font size="1"></td>
                 <td class="hide_top" width="20%" align="left"><font size="1">शामिल सुरक्षा निधि किश्त </td>
-                <td class="hide_top"width="20%" align="left"><font size="1"> </td></tr>
+                <td class="hide_top"width="20%" align="left"><font size="1"><?php echo $SD_BILLED;?></td></tr>
 
-                <tr><td class="hide_top" colspan="4" width="50%"><font size="1">ख. सात दिवस मे शिकायत का निराकरण न होने पर :</font></td>
-                <td class="hide_top" width="10%" align="left"><font size="1"></td>
+                <tr><td class="hide_top" colspan="4" width="55%"><font size="1"><b>ख. सात दिवस मे शिकायत का निराकरण न होने पर</b></font></td>
+                <td class="hide_top" width="5%" align="left"><font size="1"></td>
                 <td class="hide_top" width="20%" align="left"><font size="1">ऑनलाइन बिल भुगतान की छुट </td>
-                <td class="hide_top"width="20%" align="left"><font size="1"> </td></tr>
+                <td class="hide_top"width="20%" align="left"><font size="1"><?php echo $ONLINE_REBATE;?></td></tr>
 
-                <tr><td class="hide_top" colspan="4" width="50%"><font size="1">श्री  सहायक / कार्यपालन अभियंता से </font></td>
-                <td class="hide_top" width="10%" align="left"><font size="1"></td>
+                <tr><td class="hide_top" colspan="4" width="55%"><font size="1">श्री  सहायक / कार्यपालन अभियंता से &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $NAME_AE;?> </font></td>
+                <td class="hide_top" width="5%" align="left"><font size="1"></td>
                 <td class="hide_top" width="20%" align="left"><font size="1">पावर फैक्टर अधिभार  </td>
-                <td class="hide_top"width="20%" align="left"><font size="1"> </td></tr>
+                <td class="hide_top"width="20%" align="left"><font size="1"><?php echo $AVG_PF;?></td></tr>
 
-                <tr><td class="hide_top" colspan="4" width="50%"><font size="1">दूरभाष क्रमांक  पर संपर्क साधे</font></td>
-                <td class="hide_top" width="10%" align="left"><font size="1"></td>
+                <tr><td class="hide_top" colspan="4" width="55%"><font size="1">दूरभाष क्रमांक पर संपर्क साधे : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $PH_AE1;?></font></td>
+                <td class="hide_top" width="5%" align="left"><font size="1"></td>
                 <td class="hide_top" width="20%" align="left"><font size="1">पीनल चार्ज </td>
-                <td class="hide_top"width="20%" align="left"><font size="1"> </td></tr>
+                <td class="hide_top"width="20%" align="left"><font size="1"><?php echo $PENAL_CHRGS;?></td></tr>
 
-                <tr><td class="hide_top" colspan="4" width="50%"><font size="1"></font></td>
-                <td class="hide_top" width="10%" align="left"><font size="1"></td>
+                <tr><td class="hide_top" colspan="4" width="55%"><font size="1"></font></td>
+                <td class="hide_top" width="5%" align="left"><font size="1"></td>
                 <td class="hide_top" width="20%" align="left"><font size="1">टी ओ डी सरचार्ज </td>
-                <td class="hide_top"width="20%" align="left"><font size="1"> </td></tr>
+                <td class="hide_top"width="20%" align="left"><font size="1"><?php echo $TOD_SUR;?> </td></tr>
 
-                <tr><td colspan="4" width="50%"><font size="1">प्रयोजन : सुरक्षा निधी जो जमा है :</font></td>
-                <td class="hide_top" width="10%" align="left"><font size="1"></td>
+                <tr><td colspan="4" width="55%"><font size="1">प्रयोजन : सुरक्षा निधी जो जमा है :</font></td>
+                <td class="hide_top" width="5%" align="left"><font size="1"></td>
                 <td class="hide_top" width="20%" align="left"><font size="1">अन्य प्रभार </td>
-                <td class="hide_top"width="20%" align="left"><font size="1"> </td></tr>
+                <td class="hide_top"width="20%" align="left"><font size="1"><?php echo $OTHER_CHRG;?></td></tr>
 
-                <tr><td class="hide_top" colspan="4" width="50%"><font size="1">बिल आधार  : सुरक्षा निधी जो लेना है :</font></td>
-                <td  width="10%" align="left"><font size="1"></td>
+                <tr><td class="hide_top" colspan="4" width="55%"><font size="1">बिल आधार :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $BILL_TYPE;?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;सुरक्षा निधी जो लेना है :<?php echo $MSGLINE_H;?></font></td>
+                <td  width="5%" align="left"><font size="1"></td>
                 <td  width="20%" align="left"><font size="1">उपभोक्ता द्वारा जमा राशी : </td>
-                <td  width="20%" align="left"><font size="1"> </td></tr>
+                <td  width="20%" align="left"><font size="1"><?php echo $LAST_MONTH_AV;?></td></tr>
 
-                <tr><td class="hide_top" colspan="4" width="50%"><font size="1">विगत माह किए गए भुगतान का ब्योरा :</font></td>
-                <td  class="hide_top"width="10%" align="left"><font size="1"></td>
+                <tr><td class="hide_top" colspan="4" width="55%"><font size="1">विगत माह किए गए भुगतान का ब्योरा :</font></td>
+                <td  class="hide_top"width="5%" align="left"><font size="1"></td>
                 <td  class="hide_top"width="20%" align="left"><font size="1">सुरक्षा निधि / अग्रीम जमा पर व्याज  : </td>
-                <td  class="hide_top"width="20%" align="left"><font size="1"> </td></tr>
+                <td  class="hide_top"width="20%" align="left"><font size="1"><?php echo $INST_BAL_ARRS;?></td></tr>
 
-                <tr><td class="hide_top" colspan="4" width="50%"><font size="1"></font></td>
-                <td  class="hide_top"width="10%" align="left"><font size="1"></td>
+                <tr><td class="hide_top" colspan="4" width="55%"><font size="1"></font></td>
+                <td  class="hide_top"width="5%" align="left"><font size="1"></td>
                 <td  class="hide_top"width="20%" align="left"><font size="1">लोड फैक्टर रियायत : </td>
-                <td  class="hide_top"width="20%" align="left"><font size="1"> </td></tr>
+                <td  class="hide_top"width="20%" align="left"><font size="1"><?php echo $PWR_SVG_DEV_RBTE;?></td></tr>
 
-                <tr><td class="hide_top" colspan="4" width="50%"><font size="1"></font></td>
-                <td  class="hide_top"width="10%" align="left"><font size="1"></td>
+                <tr><td class="hide_top" colspan="4" width="55%"><font size="1"></font></td>
+                <td  class="hide_top"width="5%" align="left"><font size="1"></td>
                 <td  class="hide_top"width="20%" align="left"><font size="1">लॉक क्रेडिट : </td>
-                <td  class="hide_top"width="20%" align="left"><font size="1"> </td></tr>
+                <td  class="hide_top"width="20%" align="left"><font size="1"><?php echo $LOCK_CR_AMT;?></td></tr>
 
-                <tr><td class="hide_top" colspan="4" width="50%"><font size="1"></font></td>
-                <td  class="hide_top"width="10%" align="left"><font size="1"></td>
+                <tr><td class="hide_top" colspan="4" width="55%"><font size="1"></font></td>
+                <td  class="hide_top"width="5%" align="left"><font size="1"></td>
                 <td  class="hide_top" width="20%" align="left"><font size="1">सबसिडी : </td>
-                <td  class="hide_top"width="20%" align="left"><font size="1"> </td></tr>
+                <td  class="hide_top"width="20%" align="left"><font size="1"><?php echo $SUBSIDY;?></td></tr>
 
-                <tr><td class="hide_top" colspan="4" width="50%"><font size="1"></font></td>
-                <td  colspan="2" width="20%" align="left"><font size="1">वर्तमान देयक राशी  : </td>
-                <td  width="20%" align="left"><font size="1"> </td></tr>
+                <tr><td class="hide_top" colspan="4" width="55%"><font size="1"></font></td>
+                <td  colspan="2" width="25%" align="left"><font size="1">वर्तमान देयक राशी  : </td>
+                <td  width="20%" align="left"><font size="1"><?php echo $CURR_BILL;?></td></tr>
 
-                <tr><td class="hide_top" colspan="4" width="50%"><font size="1">विगत माहों मे खपत का ब्योरा </font></td>
-                <td  colspan="2" width="20%" align="left"><font size="1">पिछला बकाया / अधिभार अवशेष : </td>
-                <td  width="20%" align="left"><font size="1"> </td></tr>
+                <tr><td class="hide_top" colspan="4" width="55%"><font size="1">विगत माहों मे खपत का ब्योरा <?php echo $MSGLINE_H;?></font></td>
+                <td  colspan="2" width="25%" align="left"><font size="1">पिछला बकाया / अधिभार अवशेष : </td>
+                <td  width="20%" align="left"><font size="1"><?php echo $PREV_BAL;?></td></tr>
                 </table>
 
                 <table class="mytable mytable-body" align="center">
-                <tr><td><font size="1">वाचन माह </font></td>
-                <td><font size="1">वाचन की तिथी </font></td>
-                <td><font size="1">वाचन (रीडिंग)  </font></td>
-                <td><font size="1">खपत </font></td>
-                <td  colspan="2" width="20%" align="left"><font size="1">नियत तिथी तक कुल देयक राशी : </td>
+                <tr><td width="13%"><font size="1">वाचन माह </font></td>
+                <td width="14%"><font size="1">वाचन की तिथी </font></td>
+                <td width="14%"><font size="1">वाचन (रीडिंग)  </font></td>
+                <td width="14%"><font size="1">खपत </font></td>
+                <td  colspan="2" align="left"><font size="1">नियत तिथी तक कुल देयक राशी : </td>
+                <td  width="20%" align="left"><font size="1"><?php echo $BILL_NET;?></td></tr>
+
+                
+
+
+
+                <tr><td><font size="1"><?php echo $BILL_MON1;?></font></td>
+                <td><font size="1"><?php echo $RDG_DT1;?></font></td>
+                <td><font size="1"><?php echo $CURR_RDG1;?></font></td>
+                <td><font size="1"><?php echo $CONSMP1;?></font></td>
+                <td  colspan="2" width="25%" align="left"><font size="1">नियत तिथी विलंब भुगताम अधिभार  : </td>
+                <td  width="20%" align="left"><font size="1"><?php echo $SURCHRGE_DUE;?></td></tr>
+
+                <tr><td class="hide_top"><font size="1"><?php echo $BILL_MON2;?></font></td>
+                <td class="hide_top"><font size="1"><?php echo $RDG_DT2;?></font></td>
+                <td class="hide_top"><font size="1"><?php echo $CURR_RDG2;?></font></td>
+                <td class="hide_top"><font size="1"><?php echo $CONSMP2;?></font></td>
+                <td  colspan="2" width="25%" align="left"><font size="1">अधिभार सहित सकल देय राशी : </td>
+                <td  width="20%" align="left"><font size="1"><?php echo $SURCHRGE_DUE + $BILL_NET;?></td></tr>
+
+                <tr><td class="hide_top"><font size="1"><?php echo $BILL_MON3;?></font></td>
+                <td class="hide_top"><font size="1"><?php echo $RDG_DT3;?></font></td>
+                <td class="hide_top"><font size="1"><?php echo $CURR_RDG3;?></font></td>
+                <td class="hide_top"><font size="1"><?php echo $CONSMP3;?></font></td>
+                <td  colspan="2" width="25%" align="left"><font size="1"> </td>
                 <td  width="20%" align="left"><font size="1"> </td></tr>
 
-                <tr><td><font size="1"> </font></td>
-                <td><font size="1"></font></td>
-                <td><font size="1"> </font></td>
-                <td><font size="1"></font></td>
-                <td  colspan="2" width="20%" align="left"><font size="1">नियत तिथी विलंब भुगताम अधिभार  : </td>
-                <td  width="20%" align="left"><font size="1"> </td></tr>
-
-                <tr><td class="hide_top"><font size="1"> </font></td>
-                <td class="hide_top"><font size="1"></font></td>
-                <td class="hide_top"><font size="1"> </font></td>
-                <td class="hide_top"><font size="1"></font></td>
-                <td  colspan="2" width="20%" align="left"><font size="1">अधिभार सहित सकल देय राशी : </td>
-                <td  width="20%" align="left"><font size="1"> </td></tr>
-
-                <tr><td class="hide_top"><font size="1"> .</font></td>
-                <td class="hide_top"><font size="1"></font></td>
-                <td class="hide_top"><font size="1"> </font></td>
-                <td class="hide_top"><font size="1"></font></td>
-                <td  colspan="2" width="20%" align="left"><font size="1"> </td>
-                <td  width="20%" align="left"><font size="1"> </td></tr>
-
-                <tr><td class="hide_top"><font size="1">. </font></td>
-                <td class="hide_top"><font size="1"></font></td>
-                <td class="hide_top"><font size="1"> </font></td>
-                <td class="hide_top"><font size="1"></font></td>
-                <td  class="hide_top" olspan="2" width="20%" align="left"><font size="1"></td>
+                <tr><td class="hide_top"><font size="1"><?php echo $BILL_MON4;?></font></td>
+                <td class="hide_top"><font size="1"><?php echo $RDG_DT4;?></font></td>
+                <td class="hide_top"><font size="1"><?php echo $CURR_RDG4;?></font></td>
+                <td class="hide_top"><font size="1"><?php echo $CONSMP4;?></font></td>
+                <td  class="hide_top" colspan="2" width="25%" align="left"><font size="1"></td>
                 <td  class="hide_top" width="20%" align="left"><font size="1"> </td></tr>
 
-                <tr><td class="hide_top"><font size="1">.. </font></td>
-                <td class="hide_top"><font size="1"></font></td>
-                <td class="hide_top"><font size="1"> </font></td>
-                <td class="hide_top"><font size="1"></font></td>
-                <td class="hide_top" colspan="2" width="20%" align="left"><font size="1"> </td>
+                <tr><td class="hide_top"><font size="1"><?php echo $BILL_MON5;?></font></td>
+                <td class="hide_top"><font size="1"><?php echo $RDG_DT5;?></font></td>
+                <td class="hide_top"><font size="1"><?php echo $CURR_RDG5;?></font></td>
+                <td class="hide_top"><font size="1"><?php echo $CONSMP5;?></font></td>
+                <td class="hide_top" colspan="2" width="25%" align="left"><font size="1"> </td>
                 <td class="hide_top" width="20%" align="left"><font size="1"> </td></tr>
 
-                <tr><td colspan="4"><font size="1">वर्तमान बिल का दैनिक औसत रु है ।  </font></td>
-                <td colspan="2" width="20%" align="left"><font size="1"> </td>
-                <td  width="20%" align="left"><font size="1"> </td></tr>
-
-                <tr><td colspan="4"><font size="1">औसत दैनिक खपत     यूनिट है ।  </font></td>
+                <tr><td colspan="4"><font size="1">वर्तमान बिल का दैनिक औसत रु &nbsp;&nbsp;<?php echo $DAILY_AVG_BILL;?>&nbsp;&nbsp; है ।   </font></td>
                 <td class="hide_top" colspan="2" width="20%" align="left"><font size="1"> </td>
+                <td class="hide_top"  width="20%" align="left"><font size="1"> </td></tr>
+
+                <tr><td colspan="4"><font size="1">औसत दैनिक खपत &nbsp;&nbsp;<?php echo $DAILY_AVG_CONSMP;?>&nbsp;&nbsp; यूनिट है ।  </font></td>
+                <td class="hide_top" colspan="2" width="25%" align="left"><font size="1"> </td>
                 <td class="hide_top" width="20%" align="left"><font size="1"> </td></tr>
 
 
-                <tr><td  colspan="7"><font size="1">.. </font></td></tr>
+                <tr><td  colspan="7"><font size="1" color="white">.</font></td></tr>
+                <tr><td  class="hide_top" colspan="7"><font size="1" color="white">.</font></td></tr>
                
                 </table>
 
                 <table class="mytable mytable-footer" align="center">
-                <tr><td  colspan="7" align="center"><font size="1">मध्य प्रदेश मध्य क्षेत्र विद्युत वितरण कंपनी लिमिटेड : विद्युत देयक : अप पन्ना  </font></td></tr>
-                <tr><td colspan="2"><font size="0.8">बिल अवधि :  </font></td>
-                <td colspan="2" width="20%" align="left"><font size="0.8">बिल क्रमांक : </td>
-                <td  colspan="3" width="20%" align="left"><font size="0.8"> </td></tr>
+                <tr><td  colspan="7" align="center"><font size="1"><b>मध्य प्रदेश मध्य क्षेत्र विद्युत वितरण कंपनी लिमिटेड : विद्युत देयक : अप पन्ना </b></font></td></tr>
+                <tr><td colspan="2"><font size="0.8">बिल अवधि :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <?php echo $BILL_PRD;?>  </font></td>
+                <td colspan="2" width="25%" align="left"><font size="0.8">बिल क्रमांक :<?php echo $BILL_NO;?> </td>
+                <td   colspan="3" width="20%" align="left"><font size="0.8"></td></tr>
                
-                <tr><td colspan="2"><font size="0.8">बिल अवधि :  </font></td>
-                <td colspan="2" width="20%" align="left"><font size="0.8"> बिल क्रमांक :</td>
-                <td  colspan="3" width="20%" align="left"><font size="0.8"> </td></tr>
+               
 
-                <tr><td colspan="4"><font size="0.8">सर्विस क्रमांक :  </font></td>
-                <td  colspan="3" width="20%" align="left"><font size="0.8"> </td></tr>
+                <tr><td colspan="4"><font size="0.8">सर्विस क्रमांक : &nbsp;&nbsp;&nbsp; <?php echo $CONNID;?> </font></td>
+                <td  class="hide_top" colspan="3" width="20%" align="left"><font size="0.8"> </td></tr>
 
-                <tr><td colspan="4"><font size="0.8">उपभोक्ता नाम :  </font></td>
-                <td  colspan="3" width="20%" align="left"><font size="0.8"> </td></tr>
+                <tr><td colspan="4"><font size="0.8">उपभोक्ता नाम : &nbsp;&nbsp;&nbsp; <?php echo $CONS_NAME_H;?> </font></td>
+                <td  class="hide_top" colspan="3" width="20%" align="left"><font size="0.8"> </td></tr>
 
-                <tr><td colspan="4" align="center" ><font size="0.8">भुगतान की अंतिम तिथी </font></td>
-                <td  colspan="3" width="20%" align="left"><font size="0.8"> </td></tr>
+                <tr><td colspan="4" align="center" ><font size="0.8"><b>भुगतान की अंतिम तिथी </b></font></td>
+                <td  class="hide_top" colspan="3" width="20%" align="left"><font size="0.8"> </td></tr>
 
-                <tr><td colspan="2"><font size="0.8">चेक हेतु :  </font></td>
-                <td colspan="2" width="20%" align="left"><font size="0.8"> नगद हेतु :</td>
-                <td  colspan="3" width="20%" align="left"><font size="0.8"> </td></tr>
+                <tr><td colspan="3"><font size="0.8">चेक हेतु : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <?php echo $FIRST_CHQ_DT_H;?> </font></td>
+                <td  width="25%" align="left"><font size="0.8"> नगद हेतु : &nbsp;&nbsp;&nbsp; <?php echo $FIRST_CASH_DT_H;?></td>
+                <td  class="hide_top" colspan="3" width="20%" align="left"><font size="0.8"> </td></tr>
 
-                <tr><td colspan="3"><font size="0.8">नियत तिथी तक कुल देयक राशी :  </font></td>
-                <td  width="20%" align="left"><font size="0.8"> </td>
-                <td  colspan="3" width="20%" align="left"><font size="0.8"> </td></tr>
+                <tr><td colspan="3"><font size="0.8">नियत तिथी तक कुल देयक राशी : <?php echo $BILL_NET;?>  </font></td>
+                <td  width="25%" align="left"><font size="0.8"> </td>
+                <td  class="hide_top" colspan="3" width="20%" align="left"><font size="0.8"> </td></tr>
 
                 
-                <tr><td colspan="3"><font size="0.8">अधिभार सहित सकाल देयक राशी :  </font></td>
-                <td  width="20%" align="left"><font size="0.8"> </td>
-                <td  colspan="3" width="20%" align="left"><font size="0.8"> </td></tr>
+                <tr><td colspan="3"><font size="0.8">अधिभार सहित सकल देयक राशी : <?php echo $SURCHRGE_DUE + $BILL_NET;?> </font></td>
+                <td  width="25%" align="left"><font size="0.8"> </td>
+                <td  class="hide_top" colspan="3" width="20%" align="left"><font size="0.8"> </td></tr>
                 </table>
 
 

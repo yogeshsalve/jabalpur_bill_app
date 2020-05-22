@@ -1,90 +1,26 @@
-<?php
-
-
-// if(isset($_POST['submit'])){
-// 	//connect to the database
-// 	$mysqli = NEW MySQLi("localhost", "root", "", "igjy");
-
-	
-	
-	//Query the database
-	// $resultSet = $connect->query("SELECT * FROM contact_data WHERE asset_num = '$search'");
-
-// }
-
-?> 
-
-
-
-
-
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-	<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>BILL PRINTING APP</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.css" />
+<html>
+<title>JABALPUR BILLS</title>
+<head>
+!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
-    <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-  
-
-  </head>
-
-<style>
-body{
-  background-image:url("backcover1.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  }
-</style>
-
-
-
-<style>
-#yogesh {
-  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-}
-
-#yogesh td, #yogesh th {
-  border: 1px solid #ddd;
-  padding: 2px;
-}
-
-#yogesh tr:nth-child(even){background-color: #f2f2f2;}
-
-#yogesh tr:hover {background-color: #ddd;}
-
-#yogesh th {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  text-align: center;
-  background-color: #2C8299;
-  color: white;
-}
-</style>
-
-
-
-
-  <body>
-    <div class="container">
-    <br>
-    <h2 align="right"><b>मध्यप्रदेश पुर्व क्षेत्र विदयुत वितरण कंपनी लिमिटेड : विदयुत देयक छपाई </b></h2>
-    <br>
-        <h5>Upload Your Bills Data Here</h5>
-        <form id="upload_file">
-            <div class="file-field input-field">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+</head>
+<body>
+<h1 align="center"><u>JABALPUR BILLPRINTING</u></h1>
+<hr>
+<div class ="container">
+<div class="card-group">
+  <div class="card">
+    <img class="card-img-top" src="IGJY.png" alt="Card image cap">
+    <div class="card-body">
+      <h3 class="card-title" align="center"><b>इंदिरा गृह ज्योती योजना</b></h3>
+      <h5>Upload Data</h5>
+      <form id="upload_file">
+      <div class="file-field input-field">
                 <div class="btn">
                     <span>File</span>
                     <input type="file" name="contact_file">
@@ -95,40 +31,137 @@ body{
                 <input type="submit" style="margin:5px;" class="btn" value="Click to Upload"> 
                                
             </div>
-                <!-- <div>
-                <input type="text" name="contact"><input type="submit" name="search" value="Search">
-                </div> -->
-        </form>
+            </form>
+          <br>
+          <br>
+          <br>
+<P align="center"><a class="btn btn-success" width="100%" href="igjybills.php" role="button">PRINT IGJY SCHEME BILLS</a></p>
+   </div>
+  </div>
+
+  <div class="card">
+    <img class="card-img-top" src="DOM.png" alt="Card image cap">
+    <div class="card-body">
+    <h3 class="card-title" align="center"><b>घरेलू विद्युत देयक</b></h3>
+    <h5>Upload Data</h5>
+      <form id="upload_file1">
+      <div class="file-field input-field">
+                <div class="btn">
+                    <span>File</span>
+                    <input type="file" name="contact_file1">
+                </div>
+                <div class="file-path-wrapper">
+                    <input type="text" class="file-path validate">
+                </div>
+                <input type="submit" style="margin:5px;" class="btn" value="Click to Upload"> 
+                               
+            </div>
+            </form>
+          <br>
+          <br>
+          <br>
+<P align="center"><a class="btn btn-success" width="100%" href="dombills.php" role="button">PRINT DOM SCHEME BILLS</a></p> 
     </div>
-    <br>
-    <br>
-   <hr size="30" color="042E29">
-   <a class="btn btn-success" align="center" width="100% " href="mpbills.php" role="button">PRINT IGJY SCHEME BILLS</a>
-   <hr size="30" color="042E29">
+  </div>
 
-   
+  <div class="card">
+    <img class="card-img-top" src="NDM.png" alt="Card image cap">
+    <div class="card-body">
+      <h3 class="card-title" align="center"><b>गैर घरेलू विद्युत देयक</b></h3>
+      <h5>Upload Data</h5>
+      <form id="upload_file2">
+      <div class="file-field input-field">
+                <div class="btn">
+                    <span>File</span>
+                    <input type="file" name="contact_file2">
+                </div>
+                <div class="file-path-wrapper">
+                    <input type="text" class="file-path validate">
+                </div>
+                <input type="submit" style="margin:5px;" class="btn" value="Click to Upload"> 
+                               
+            </div>
+            </form>
+          <br>
+          <br>
+          <br>
+<P align="center"><a class="btn btn-success" width="100%" href="ndmbills.php" role="button">PRINT NDM SCHEME BILLS</a></p> 
+    </div>
+  </div>
+</div>
+</div>
 
 
 
 
 
 
-
-
-     
-
-
-
-
-<!-- </div> -->
-
-
-  <script type="text/javascript">
+<script type="text/javascript">
       $(document).ready(function(){
         $('#upload_file').on("submit",function(e){
             e.preventDefault();
             $.ajax({
-                url:"imporyigjy.php",
+                url:"import.php",
+                method:"POST",
+                data: new FormData(this),
+                contentType:false,
+                cache:false,
+                processData:false,
+                success: function(data){
+                    if(data=='Error1'){
+                        alert("Invalid File");
+                    }else if(data =='Error2'){
+                        alert("Please Select file");
+                    }else{
+                        console.log("Success",data);
+                    }
+                },
+                error: function(data){
+                	console.log("err:::",data)
+                }
+
+            })
+        });
+      });
+
+  </script>
+
+<script type="text/javascript">
+      $(document).ready(function(){
+        $('#upload_file1').on("submit",function(e){
+            e.preventDefault();
+            $.ajax({
+                url:"importdom.php",
+                method:"POST",
+                data: new FormData(this),
+                contentType:false,
+                cache:false,
+                processData:false,
+                success: function(data){
+                    if(data=='Error1'){
+                        alert("Invalid File");
+                    }else if(data =='Error2'){
+                        alert("Please Select file");
+                    }else{
+                        console.log("Success",data);
+                    }
+                },
+                error: function(data){
+                	console.log("err:::",data)
+                }
+
+            })
+        });
+      });
+
+  </script>
+
+<script type="text/javascript">
+      $(document).ready(function(){
+        $('#upload_file2').on("submit",function(e){
+            e.preventDefault();
+            $.ajax({
+                url:"importndm.php",
                 method:"POST",
                 data: new FormData(this),
                 contentType:false,
@@ -153,11 +186,4 @@ body{
 
   </script>
 </body>
-</html> 
-
-
-
-
-
-
-
+</html>
