@@ -368,7 +368,7 @@ S_BILL_AMT,S_GOVT_SUBSIDY,S_MON_BILL,SAMADHAN_ARR,QR_CODE,ADV_PAY_INCENT,ONLINE_
                 <tr><td class="hide_top" width="61%"><font size="1">सुरक्षा निधी जो जमा है :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $TOT_SD_HELD;?></font></td>
                 <td class="hide_top" width="7%" align="left"><font size="1"></td>
                 <td class="hide_top" width="20%" align="left"><font size="1">सुरक्षा निधी पर ब्याज :</td>
-                <td class="hide_top" width="12%" align="left"><font size="1"><?php echo $INST_BAL_ARRS;?></td></tr>      
+                <td class="hide_top" width="12%" align="left"><font size="1"><?php echo $INSTL_AMT_BLD;?></td></tr>      
 
                 <tr><td class="hide_top" width="61%"><font size="1">सुरक्षा निधी जो लेना  है :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $MSGLINE_H;?></font></td>
                 <td class="hide_top" width="7%" align="left"><font size="1"></td>
