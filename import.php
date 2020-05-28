@@ -236,6 +236,6 @@ $connect->close();
 
 <script>
 setTimeout(function () {    
-    window.location.href = 'index.php'; 
+    window.location.href = 'index1.php'; 
 },3000);
 </script>

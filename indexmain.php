@@ -1,9 +1,6 @@
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
+<html>
 <title>JABALPUR BILLS</title>
+<head>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
@@ -11,25 +8,12 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-<style>
-    .box{
-        width:"50%";
-        color: #fff;
-        padding: 10px;
-        display: none;
-        margin-top: 10px;
-    }
-    .igjy{ background: #ffffff; }
-    .dom{ background: #ffffff; }
-    .ndom{ background: #ffffff; }
-</style>
-<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-
+</head>
 <style>
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
-  width: auto;
+  width: 100%;
 }
 
 td, th {
@@ -58,7 +42,7 @@ input[type=button] {
   color: white;
   padding: 3px 35px;
   margin: 4px 0;
-  border: "1";
+  border: none;
   border-radius: 4px;
   cursor: pointer;
 }
@@ -80,73 +64,44 @@ input[type=button] {
 .button1 {background-color: #ff0000;} /* Green */
 .button2 {background-color: #008CBA;} /* Blue */
 </style>
-<style>
-div.ex1 {
-  width:450px;
-  align: left;
- }
- div.card {
-  width:540px;
-  background-color: #4a4a4a;
-   
- }
- card.table, th, td {
-  border: 1px solid white;
-}
-
-</style>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
 <body>
-<table>
-<tr>
-<td>
-    <div class ="ex1">
-        <select>
-            <option>Choose Bill Type</option>
-            <option value="igjy">IGJY</option>
-            <option value="dom">DOM</option>
-            <option value="ndom">NDOM</option>
-        </select>
-    </div>
-    </td>
-    <td>
-    <h1><b><u>JABALPUR BILLPRINTING</u></b></h1>
-    </td>
-    </tr>
-    </table>
-    
-    <div class="igjy box">
-    
-  
-    <!-- <div class="container"> -->
-    <div class="card">
+<h1 align="center"><u>JABALPUR BILLPRINTING</u></h1>
+<hr>
+<div class ="container">
+<div class="card-group">
+  <div class="card">
     <!-- <img class="card-img-top" src="IGJY.png" alt="Card image cap"> -->
-    <div class="card-body">      
-    <h3 class="card-title" align="center"><b>इंदिरा गृह ज्योती योजना</b></h3>
-      <hr color="white">
+    <div class="card-body">
+      <h3 class="card-title" align="center"><b>इंदिरा गृह ज्योती योजना</b></h3>
+      <hr>
       <h5>Upload Data</h5>
       <form id="upload_file" method="post">
       <div class="file-field input-field">
-                <div class="btn btn-success">
+                <div class="btn">
                     <span>File</span>
                     <input type="file" name="contact_file">
                 </div>
                 <div class="file-path-wrapper">
                     <input type="text" class="file-path validate">
                 </div>
-                <button type="submit" class="btn btn-success" >Click to Upload</button> 
-                </div>
+                <input type="submit" style="margin:5px;" class="btn" value="Click to Upload"> 
+                <!-- <a class="btn btn-success" width="100%" role="button">PRINT IGJY BILLS</a>
+                <button type="submit"  onClick="refreshPage()">Refresh Button</button> -->
+                
+                             
+            </div>
             </form>
-          
-          
-<P align="right"><a class="btn btn-success" width="100%" href="igjybills.php" role="button">PRINT IGJY BILLS</a>&nbsp;<a class="btn btn-danger" width="100%" href="deleteigjy.php" onclick="return confirm('Are you sure you want to delete all records ?');" role="button">Delete All Records</a></p>
+          <br>
+          <br>
+          <br>
+<P align="center"><a class="btn btn-success" width="100%" href="igjybills.php" role="button">PRINT IGJY BILLS</a>&nbsp;<a class="btn btn-danger" width="100%" href="deleteigjy.php" onclick="return confirm('Are you sure you want to delete all records ?');" role="button">Delete All Records</a></p>
    
-<div class="card bg-info text-white " style="width:500px">
+<div class="card bg-info text-white " style="height:60px">
 <div class="card-body">
 
 <p>
-<table id="new"  align="center" >
+<b>Total no. of Records :</b>
+<table id="new" width=48% align="center" >
 <tbody class="border">
     
 
@@ -165,7 +120,7 @@ div.ex1 {
 
   // output data of each row
     while($row = $result1->fetch_assoc()) {
-    echo "Total no. of Records :&nbsp;".$row["count(ivrsid)"];
+    echo "&nbsp;&nbsp;&nbsp;".$row["count(ivrsid)"];
     
     
     
@@ -205,60 +160,37 @@ div.ex1 {
    
    </div>
    </div>
-   
-     
-   <!-- <script>
-   $(function() {
-     $("#refresh").on("click", function() {
-        $("#mydiv").load("index.php")
-        return false;
-    })
-  })
-</script> -->
-    
-    
 
-    </div> 
-    </div>
-
-
-
-
-
-    
-    <div class="dom box">
-    
-    <!-- unit start for dom -->
-    
-    <!-- <div class="container"> -->
-    <div class="card">
-    <!-- <img class="card-img-top" src="IGJY.png" alt="Card image cap"> -->
-    <div class="card-body">      
+  <div class="card">
+    <!-- <img class="card-img-top" src="DOM.png" alt="Card image cap"> -->
+    <div class="card-body">
     <h3 class="card-title" align="center"><b>घरेलू विद्युत देयक</b></h3>
-      <hr color="white">
-      <h5>Upload Data</h5>
-      <form id="upload_file1" method="post">
+    <hr>
+    <h5>Upload Data</h5>
+      <form id="upload_file1">
       <div class="file-field input-field">
-                <div class="btn btn-success">
+                <div class="btn">
                     <span>File</span>
                     <input type="file" name="contact_file1">
                 </div>
                 <div class="file-path-wrapper">
                     <input type="text" class="file-path validate">
                 </div>
-                <button type="submit" class="btn btn-success" >Click to Upload</button> 
+                <input type="submit" style="margin:5px;" class="btn" value="Click to Upload"> 
                                
-                             
             </div>
             </form>
-         
-          <P align="right"><a class="btn btn-success" width="100%" href="dombills.php" role="button">PRINT DOMBILLS</a>&nbsp;<a class="btn btn-danger" width="100%" href="deletedom.php" onclick="return confirm('Are you sure you want to delete all records ?');" role="button">Delete All Records</a></p>
-   
-<div class="card bg-info text-white " style="width:500px">
+          <br>
+          <br>
+          <br>
+          <P align="center"><a class="btn btn-success" width="100%" href="dombills.php" role="button">PRINT DOMBILLS</a>&nbsp;<a class="btn btn-danger" width="100%" href="deletedom.php" onclick="return confirm('Are you sure you want to delete all records ?');" role="button">Delete All Records</a></p>
+    
+<div class="card bg-info text-white " style="height:60px">
 <div class="card-body">
 
 <p>
-<table id="new"  align="center" >
+<b>Total no. of Records :</b>
+<table id="new" width=48% align="center" >
 <tbody class="border">
     
 
@@ -277,23 +209,24 @@ div.ex1 {
 
   // output data of each row
     while($row = $result1->fetch_assoc()) {
-    echo "Total no. of Records : &nbsp;".$row["count(ivrsid)"];
+    echo "&nbsp;&nbsp;&nbsp;".$row["count(ivrsid)"];
     
     
     
-   
+    // "<tr>
+    // <td>" . $row["count(ivrsid)"]. "</td>
+  
+    // </tr>";
     }
     echo "</table>";
     } else { echo "0 results"; }
     $conn->close();
     ?>
     </p>
-   
     </div>
     </div>
-
-
-  <form id="form" name="form"  method="post" action="">
+    
+    <form id="form" name="form"  method="post" action="">
     <table >
     <tr>
     <th>FROM</th>
@@ -305,59 +238,50 @@ div.ex1 {
     <td><input type="text" id="to" name="to"></td>
     <td><button id="delete" name="delete" type="button">Delete</button></td>
     </tr>
+    <tr>
+    <td colspan="3"><button class="button button1">&nbsp;Press This To Delete All Records</button></td></tr>
     </table>
     </form>
-    
-   
-   
 
    
-   
-   
-   
-   </div>
-   </div>
-   
-   </div>
-    <!-- unit end for dom -->
-    
     
     
     
     
     
     </div>
-    <!-- ndom box starts -->
-    <div class="ndom box">
-    
-    <div class="card">
-    <!-- <img class="card-img-top" src="IGJY.png" alt="Card image cap"> -->
-    <div class="card-body">      
-    <h3 class="card-title" align="center"><b>गैर घरेलू विद्युत देयक</b></h3>
-      <hr color="white">
+  </div>
+
+  <div class="card">
+    <!-- <img class="card-img-top" src="NDM.png" alt="Card image cap"> -->
+    <div class="card-body">
+      <h3 class="card-title" align="center"><b>गैर घरेलू विद्युत देयक</b></h3>
+      <hr>
       <h5>Upload Data</h5>
-      <form id="upload_file2" method="post">
+      <form id="upload_file2">
       <div class="file-field input-field">
-                <div class="btn btn-success">
+                <div class="btn">
                     <span>File</span>
                     <input type="file" name="contact_file2">
                 </div>
                 <div class="file-path-wrapper">
                     <input type="text" class="file-path validate">
                 </div>
-                <button type="submit" class="btn btn-success" >Click to Upload</button> 
+                <input type="submit" style="margin:5px;" class="btn" value="Click to Upload"> 
                                
-                             
             </div>
             </form>
-         
-          <P align="right"><a class="btn btn-success" width="100%" href="ndmbills.php" role="button">PRINT DOMBILLS</a>&nbsp;<a class="btn btn-danger" width="100%" href="deletendm.php" onclick="return confirm('Are you sure you want to delete all records ?');" role="button">Delete All Records</a></p>
+          <br>
+          <br>
+          <br>
+          <P align="center"><a class="btn btn-success" width="100%" href="ndmbills.php" role="button">PRINT NDMBILLS</a>&nbsp;<a class="btn btn-danger" width="100%" href="deletendm.php" onclick="return confirm('Are you sure you want to delete all records ?');" role="button">Delete All Records</a></p>
    
-<div class="card bg-info text-white " style="width:500px">
+<div class="card bg-info text-white " style="height:60px">
 <div class="card-body">
 
 <p>
-<table id="new"  align="center" >
+<b>Total no. of Records :</b>
+<table id="new" width=48% align="center" >
 <tbody class="border">
     
 
@@ -376,23 +300,27 @@ div.ex1 {
 
   // output data of each row
     while($row = $result1->fetch_assoc()) {
-    echo "Total no. of Records : &nbsp;".$row["count(ivrsid)"];
+    echo "&nbsp;&nbsp;&nbsp;".$row["count(ivrsid)"];
     
     
     
-   
+    // "<tr>
+    // <td>" . $row["count(ivrsid)"]. "</td>
+  
+    // </tr>";
     }
     echo "</table>";
     } else { echo "0 results"; }
     $conn->close();
     ?>
     </p>
+    </div>
+    </div>
    
-    </div>
-    </div>
 
+   <!-- form element for ndm starts here -->
 
-  <form id="form" name="form"  method="post" action="">
+    <form id="form" name="form"  method="post" action="">
     <table >
     <tr>
     <th>FROM</th>
@@ -404,42 +332,25 @@ div.ex1 {
     <td><input type="text" id="to" name="to"></td>
     <td><button id="delete" name="delete" type="button">Delete</button></td>
     </tr>
+    <tr>
+    <td colspan="3"><button  class="button button1">&nbsp;Press This To Delete All Records</button></td></tr>
     </table>
     </form>
-    
-   
-   
 
+    <!-- form ends -->
+    <!-- script to delete all records ndm -->
+  
+
+    <!-- script ends -->
    
-   
-   
-   
-   </div>
-   </div>
-   
-   </div>
-    
-    
     </div>
-</body>
-</html>
+  </div>
+</div>
+</div>
 
 
-<script>
-$(document).ready(function(){
-    $("select").change(function(){
-        $(this).find("option:selected").each(function(){
-            var optionValue = $(this).attr("value");
-            if(optionValue){
-                $(".box").not("." + optionValue).hide();
-                $("." + optionValue).show();
-            } else{
-                $(".box").hide();
-            }
-        });
-    }).change();
-});
-</script>
+
+
 
 <script type="text/javascript">
       $(document).ready(function(){
@@ -540,3 +451,5 @@ $(document).ready(function(){
       });
 
   </script>
+</body>
+</html>
