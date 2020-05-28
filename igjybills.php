@@ -353,7 +353,7 @@ S_BILL_AMT,S_GOVT_SUBSIDY,S_MON_BILL,SAMADHAN_ARR,QR_CODE,ADV_PAY_INCENT,ONLINE_
                 <tr><td class="hide_top" width="61%"><font size="1">सप्लाई के घंटे (औसतं दैनिक विद्युत प्रदाय ):<?php echo $IVRSID;?></font></td>
                 <td class="hide_top" width="7%" align="left"><font size="1"></td>
                 <td class="hide_top" width="20%" align="left"><font size="1">केपी / पावर फैक्टर अधिभार : </td>
-                <td class="hide_top" width="12%" align="left"><font size="1"></td></tr>       
+                <td class="hide_top" width="12%" align="left"><font size="1">0</td></tr>       
 
                 <tr><td class="hide_top" width="61%"><font size="1">प्रयोजन :</font></td>
                 <td class="hide_top" width="7%" align="left"><font size="1"></td>
